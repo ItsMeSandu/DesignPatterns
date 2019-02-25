@@ -21,6 +21,12 @@
 		E601BC0B2222E7B70036EFDE /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601BC0A2222E7B70036EFDE /* RedViewController.swift */; };
 		E601BC0D2222E7C90036EFDE /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601BC0C2222E7C90036EFDE /* GreenViewController.swift */; };
 		E601BC102222EABF0036EFDE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601BC0F2222EABF0036EFDE /* Storyboarded.swift */; };
+		E662290B222482920048092A /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662290A222482920048092A /* Observer.swift */; };
+		E662290D222484040048092A /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662290C222484040048092A /* Subject.swift */; };
+		E662290F2224846D0048092A /* BinaryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662290E2224846D0048092A /* BinaryObserver.swift */; };
+		E6622911222484A90048092A /* HexaObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6622910222484A90048092A /* HexaObserver.swift */; };
+		E6622913222484C20048092A /* OctalObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6622912222484C20048092A /* OctalObserver.swift */; };
+		E6622915222486530048092A /* ObserverExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6622914222486530048092A /* ObserverExampleViewController.swift */; };
 		E6D2F02522231BBC007D75AC /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2F02422231BBC007D75AC /* BlueViewController.swift */; };
 		E6D2F02822231C19007D75AC /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2F02722231C19007D75AC /* RedCoordinator.swift */; };
 		E6D2F02A22231D58007D75AC /* GreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2F02922231D58007D75AC /* GreenCoordinator.swift */; };
@@ -64,6 +70,12 @@
 		E601BC0A2222E7B70036EFDE /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		E601BC0C2222E7C90036EFDE /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		E601BC0F2222EABF0036EFDE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		E662290A222482920048092A /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		E662290C222484040048092A /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		E662290E2224846D0048092A /* BinaryObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryObserver.swift; sourceTree = "<group>"; };
+		E6622910222484A90048092A /* HexaObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaObserver.swift; sourceTree = "<group>"; };
+		E6622912222484C20048092A /* OctalObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctalObserver.swift; sourceTree = "<group>"; };
+		E6622914222486530048092A /* ObserverExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverExampleViewController.swift; sourceTree = "<group>"; };
 		E6D2F02422231BBC007D75AC /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		E6D2F02722231C19007D75AC /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
 		E6D2F02922231D58007D75AC /* GreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCoordinator.swift; sourceTree = "<group>"; };
@@ -117,12 +129,12 @@
 		E601BBCF2222D2050036EFDE /* MyDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				E6622909222481610048092A /* Observer */,
 				E601BC072222DF940036EFDE /* Coordinator */,
 				E601BC042222D74B0036EFDE /* DependencyInjection */,
 				E601BC012222D2430036EFDE /* Singleton */,
 				E601BBD02222D2050036EFDE /* AppDelegate.swift */,
 				E601BC0F2222EABF0036EFDE /* Storyboarded.swift */,
-				E601BBD22222D2050036EFDE /* ViewController.swift */,
 				E601BBD42222D2050036EFDE /* Main.storyboard */,
 				E601BBDA2222D2050036EFDE /* Assets.xcassets */,
 				E601BBDC2222D2050036EFDE /* LaunchScreen.storyboard */,
@@ -177,9 +189,23 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		E6622909222481610048092A /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				E6622914222486530048092A /* ObserverExampleViewController.swift */,
+				E662290A222482920048092A /* Observer.swift */,
+				E662290C222484040048092A /* Subject.swift */,
+				E662290E2224846D0048092A /* BinaryObserver.swift */,
+				E6622910222484A90048092A /* HexaObserver.swift */,
+				E6622912222484C20048092A /* OctalObserver.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		E6D2F02622231BD8007D75AC /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				E601BBD22222D2050036EFDE /* ViewController.swift */,
 				E601BC0A2222E7B70036EFDE /* RedViewController.swift */,
 				E601BC0C2222E7C90036EFDE /* GreenViewController.swift */,
 				E6D2F02422231BBC007D75AC /* BlueViewController.swift */,
@@ -321,18 +347,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E662290B222482920048092A /* Observer.swift in Sources */,
 				E601BC0B2222E7B70036EFDE /* RedViewController.swift in Sources */,
+				E662290D222484040048092A /* Subject.swift in Sources */,
 				E6D2F02822231C19007D75AC /* RedCoordinator.swift in Sources */,
 				E6D2F02A22231D58007D75AC /* GreenCoordinator.swift in Sources */,
 				E601BBD32222D2050036EFDE /* ViewController.swift in Sources */,
+				E662290F2224846D0048092A /* BinaryObserver.swift in Sources */,
 				E601BBD12222D2050036EFDE /* AppDelegate.swift in Sources */,
 				E601BC092222E1270036EFDE /* MainCoordinator.swift in Sources */,
 				E601BC0D2222E7C90036EFDE /* GreenViewController.swift in Sources */,
 				E601BC102222EABF0036EFDE /* Storyboarded.swift in Sources */,
+				E6622915222486530048092A /* ObserverExampleViewController.swift in Sources */,
+				E6622911222484A90048092A /* HexaObserver.swift in Sources */,
 				E601BC062222DD8D0036EFDE /* DependencyInjection.swift in Sources */,
 				E601BC032222D2CB0036EFDE /* ColourPalette .swift in Sources */,
 				E6D2F02522231BBC007D75AC /* BlueViewController.swift in Sources */,
 				E601BBD92222D2050036EFDE /* MyDesignPatterns.xcdatamodeld in Sources */,
+				E6622913222484C20048092A /* OctalObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
