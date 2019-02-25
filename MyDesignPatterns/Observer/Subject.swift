@@ -31,4 +31,8 @@ class Subject{
         }
     }
     
+    func removeObserver(observer : Observer) {
+        observerArray = observerArray.filter{ $0.id != observer.id }
+    }
+    
 }

@@ -9,19 +9,24 @@
 import UIKit
 
 class ObserverExampleViewController: UIViewController {
+    let subject = Subject()
+
+    lazy var binary = BinaryObserver(subject: subject, id: 1)
+    lazy var octal = OctalObserver(subject: subject, id: 2)
+    lazy var hex = HexaObserver(subject: subject, id: 3)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let subject = Subject()
-        
-        let binary = BinaryObserver(subject: subject, id: 1)
-        let octal = OctalObserver(subject: subject, id: 2)
-        let hex = HexaObserver(subject: subject, id: 3)
-        
+
         subject.number = 15
         subject.number = 2
     }
-
+    
+    deinit {
+        subject.removeObserver(observer: binary)
+        subject.removeObserver(observer: octal)
+        subject.removeObserver(observer: hex)
+    }
 }
