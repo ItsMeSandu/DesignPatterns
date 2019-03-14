@@ -25,7 +25,7 @@ class MainCoordinator: NSObject, Coordinator {
     
     func start() {
         nav.delegate    = self
-        let vc = ObserverExampleViewController()
+        let vc =  BuilderExample()// ObserverExampleViewController()
 //        vc.coordinator = self
         nav.pushViewController(vc, animated: true)
     }
