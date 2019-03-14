@@ -27,6 +27,8 @@
 		E6622911222484A90048092A /* HexaObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6622910222484A90048092A /* HexaObserver.swift */; };
 		E6622913222484C20048092A /* OctalObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6622912222484C20048092A /* OctalObserver.swift */; };
 		E6622915222486530048092A /* ObserverExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6622914222486530048092A /* ObserverExampleViewController.swift */; };
+		E6B612D1223A32BD00E7D26C /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B612D0223A32BD00E7D26C /* Factory.swift */; };
+		E6B612D3223A383700E7D26C /* FactoryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B612D2223A383700E7D26C /* FactoryExample.swift */; };
 		E6D2F02522231BBC007D75AC /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2F02422231BBC007D75AC /* BlueViewController.swift */; };
 		E6D2F02822231C19007D75AC /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2F02722231C19007D75AC /* RedCoordinator.swift */; };
 		E6D2F02A22231D58007D75AC /* GreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2F02922231D58007D75AC /* GreenCoordinator.swift */; };
@@ -76,6 +78,8 @@
 		E6622910222484A90048092A /* HexaObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaObserver.swift; sourceTree = "<group>"; };
 		E6622912222484C20048092A /* OctalObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctalObserver.swift; sourceTree = "<group>"; };
 		E6622914222486530048092A /* ObserverExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverExampleViewController.swift; sourceTree = "<group>"; };
+		E6B612D0223A32BD00E7D26C /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		E6B612D2223A383700E7D26C /* FactoryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryExample.swift; sourceTree = "<group>"; };
 		E6D2F02422231BBC007D75AC /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		E6D2F02722231C19007D75AC /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
 		E6D2F02922231D58007D75AC /* GreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCoordinator.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		E601BBCF2222D2050036EFDE /* MyDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				E6B612CF223A30EC00E7D26C /* Factory */,
 				E6622909222481610048092A /* Observer */,
 				E601BC072222DF940036EFDE /* Coordinator */,
 				E601BC042222D74B0036EFDE /* DependencyInjection */,
@@ -200,6 +205,15 @@
 				E6622912222484C20048092A /* OctalObserver.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		E6B612CF223A30EC00E7D26C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E6B612D0223A32BD00E7D26C /* Factory.swift */,
+				E6B612D2223A383700E7D26C /* FactoryExample.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		E6D2F02622231BD8007D75AC /* VC */ = {
@@ -358,6 +372,7 @@
 				E601BC092222E1270036EFDE /* MainCoordinator.swift in Sources */,
 				E601BC0D2222E7C90036EFDE /* GreenViewController.swift in Sources */,
 				E601BC102222EABF0036EFDE /* Storyboarded.swift in Sources */,
+				E6B612D1223A32BD00E7D26C /* Factory.swift in Sources */,
 				E6622915222486530048092A /* ObserverExampleViewController.swift in Sources */,
 				E6622911222484A90048092A /* HexaObserver.swift in Sources */,
 				E601BC062222DD8D0036EFDE /* DependencyInjection.swift in Sources */,
@@ -365,6 +380,7 @@
 				E6D2F02522231BBC007D75AC /* BlueViewController.swift in Sources */,
 				E601BBD92222D2050036EFDE /* MyDesignPatterns.xcdatamodeld in Sources */,
 				E6622913222484C20048092A /* OctalObserver.swift in Sources */,
+				E6B612D3223A383700E7D26C /* FactoryExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
